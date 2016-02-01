@@ -5,3 +5,5 @@
 [user]
 	email = loffredo@gmail.com
 	name = Danny Loffredo
+[push]
+	default = current
