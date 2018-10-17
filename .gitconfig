@@ -1,9 +1,7 @@
-[color]
-	ui = auto
 [alias]
 	st = status
-[user]
-	email = loffredo@gmail.com
-	name = Danny Loffredo
+	info = remote -v show
+[color]
+	ui = auto
 [push]
 	default = current

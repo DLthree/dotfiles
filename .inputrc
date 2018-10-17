@@ -3,3 +3,7 @@
 "\e[3;5~": kill-word
 
 set completion-ignore-case on
+set show-all-if-unmodified on
+set blink-matching-paren on
+set colored-stats on
+

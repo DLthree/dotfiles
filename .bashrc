@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=100000
-HISTFILESIZE=200000
+HISTSIZE=1000000
+HISTFILESIZE=2000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -113,4 +113,18 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="~/bin:$PATH"
+# if [ -x`which colorgcc` ]; then
+#     export CC="colorgcc"
+# fi
+# do this because BALLER
+CC=clang
+CXX=clang++
+
+export SUDO_EDITOR="emacs"
+
+#export PATH="$HOME/bin:$PATH:$HOME/lib/depot_tools:$HOME/lib/llvm-trunk/build32/bin:$HOME/lib/tmux-mem-cpu-load"
+export PATH="$HOME/bin:$PATH:$HOME/lib/depot_tools:$HOME/lib/tmux-mem-cpu-load"
+
+export LESS="-R"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
