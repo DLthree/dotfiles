@@ -166,7 +166,7 @@ if breakpoints are present in `python-mode' files"
 (global-set-key "\M-b" 'ido-switch-buffer)
 (global-set-key "\C-b" 'electric-buffer-list)
 (global-set-key "\C-f" 'find-file)
-(global-set-key "\M-w" 'kill-this-buffer)
+;(global-set-key "\M-w" 'kill-this-buffer)
 (global-set-key "\M-s" 'save-buffer)
 ;(global-set-key "\C-a" 'mark-whole-buffer)
 
